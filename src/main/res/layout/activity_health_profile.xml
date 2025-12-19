@@ -1,0 +1,47 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/scrollProfile" android:layout_width="match_parent" android:layout_height="match_parent" android:background="@android:color/white" android:padding="16dp">
+<LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical">
+<!--  🔹 Title  -->
+<TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/health_profile_title" android:textSize="20sp" android:textStyle="bold" android:textColor="@android:color/black" android:layout_marginBottom="12dp"/>
+<!--  🔹 Weight  -->
+<EditText android:id="@+id/etWeight" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/weight_hint" android:inputType="numberDecimal" android:autofillHints="weight" android:textColor="@android:color/black" android:textColorHint="@android:color/darker_gray"/>
+<!--  🔹 Height  -->
+<EditText android:id="@+id/etHeight" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/height_hint" android:inputType="numberDecimal" android:autofillHints="height" android:layout_marginTop="8dp" android:textColor="@android:color/black" android:textColorHint="@android:color/darker_gray"/>
+<!--  🔹 Gender  -->
+<TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Select Gender" android:textColor="@android:color/darker_gray" android:layout_marginTop="8dp"/>
+<Spinner android:id="@+id/spinnerGender" android:layout_width="match_parent" android:layout_height="wrap_content" android:autofillHints="gender"/>
+<!--  🔹 Food Allergies / Intolerances  -->
+<TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/food_allergies_intolerances_title" android:layout_marginTop="12dp" android:textStyle="bold" android:textColor="@android:color/black"/>
+<LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:layout_marginTop="6dp">
+<CheckBox android:id="@+id/cbPeanuts" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/allergy_peanuts"/>
+<CheckBox android:id="@+id/cbTreeNuts" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/allergy_tree_nuts"/>
+<CheckBox android:id="@+id/cbDairy" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/allergy_dairy"/>
+<CheckBox android:id="@+id/cbEggs" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/allergy_eggs"/>
+<CheckBox android:id="@+id/cbWheat" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/allergy_wheat"/>
+<CheckBox android:id="@+id/cbSoy" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/allergy_soy"/>
+<CheckBox android:id="@+id/cbFish" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/allergy_fish"/>
+<CheckBox android:id="@+id/cbShellfish" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/allergy_shellfish"/>
+</LinearLayout>
+<!--  🔹 Food Dislikes  -->
+<EditText android:id="@+id/etDislikes" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/food_dislikes_hint" android:layout_marginTop="8dp" android:inputType="textCapSentences|textMultiLine" android:autofillHints="text" android:textColor="@android:color/black" android:textColorHint="@android:color/darker_gray"/>
+<!--  🔹 Dietary Preference  -->
+<TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Select Dietary Preference" android:textColor="@android:color/darker_gray" android:layout_marginTop="8dp"/>
+<Spinner android:id="@+id/spinnerDietary" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+<!--  🔹 Activity Level  -->
+<TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Select Activity Level" android:textColor="@android:color/darker_gray" android:layout_marginTop="8dp"/>
+<Spinner android:id="@+id/spinnerActivity" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+<!--  🔹 Health Goal  -->
+<TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Select Health Goal" android:textColor="@android:color/darker_gray" android:layout_marginTop="8dp"/>
+<Spinner android:id="@+id/spinnerGoal" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+<!--  🔹 Water Goal  -->
+<EditText android:id="@+id/etWater" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/daily_water_goal_hint" android:inputType="numberDecimal" android:autofillHints="number" android:layout_marginTop="8dp" android:textColor="@android:color/black" android:textColorHint="@android:color/darker_gray"/>
+<!--  🔹 Sleep Hours  -->
+<EditText android:id="@+id/etSleep" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/sleep_hours_hint" android:inputType="numberDecimal" android:autofillHints="number" android:layout_marginTop="8dp" android:textColor="@android:color/black" android:textColorHint="@android:color/darker_gray"/>
+<!--  🔹 Medical Conditions  -->
+<EditText android:id="@+id/etMedical" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/medical_conditions_hint" android:layout_marginTop="8dp" android:inputType="textCapSentences|textMultiLine" android:autofillHints="text" android:textColor="@android:color/black" android:textColorHint="@android:color/darker_gray"/>
+<!--  🔹 Buttons  -->
+<LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="?android:attr/buttonBarStyle" android:layout_marginTop="16dp">
+<Button android:id="@+id/btnSkipProfile" style="?android:attr/buttonBarButtonStyle" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="@string/skip_button"/>
+<Button android:id="@+id/btnSaveProfile" style="?android:attr/buttonBarButtonStyle" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="@string/save_button"/>
+</LinearLayout>
+</LinearLayout>
+</ScrollView>

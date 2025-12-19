@@ -1,0 +1,136 @@
+<resources>
+    <string name="app_name">NutriBite</string>
+    <string name="daily_button">Daily</string>
+    <string name="weekly_button">Weekly</string>
+    <string name="health_profile_title">Health Profile</string>
+    <string name="weight_hint">Weight (kg)</string>
+    <string name="height_hint">Height (cm)</string>
+    <string name="food_allergies_intolerances_title">Food Allergies &amp; Intolerances</string>
+    <string name="allergy_peanuts">Peanuts</string>
+    <string name="allergy_tree_nuts">Tree nuts</string>
+    <string name="allergy_dairy">Milk/Dairy</string>
+    <string name="allergy_eggs">Eggs</string>
+    <string name="allergy_wheat">Wheat/Gluten</string>
+    <string name="allergy_soy">Soy</string>
+    <string name="allergy_fish">Fish</string>
+    <string name="allergy_shellfish">Shellfish</string>
+    <string name="food_dislikes_hint">Food dislikes (optional)</string>
+    <string name="daily_water_goal_hint">Daily water goal (liters)</string>
+    <string name="sleep_hours_hint">Sleep hours per night</string>
+    <string name="medical_conditions_hint">Medical conditions (optional)</string>
+    <string name="skip_button">Skip</string>
+    <string name="save_button">Save</string>
+    <string name="app_subtitle">Your Mess Diet &amp; Nutrition companion</string>
+    <string name="login_button">Login</string>
+    <string name="profile_content_description">Profile</string>
+    <string name="mess_menu_title">Mess Menu</string>
+    <string name="day_monday">Monday</string>
+    <string name="day_tuesday">Tuesday</string>
+    <string name="day_wednesday">Wednesday</string>
+    <string name="day_thursday">Thursday</string>
+    <string name="day_friday">Friday</string>
+    <string name="day_saturday">Saturday</string>
+    <string name="day_sunday">Sunday</string>
+    <string name="day_menu_format">%s Menu</string>
+    <string name="nutrition_guide_title">Nutrition Guide</string>
+    <string name="food_search_button">Food Search</string>
+    <string name="bmi_calculator_button">BMI Calculator</string>
+    <string name="food_search_hint">Search public food database...</string>
+    <string name="search_button">Search</string>
+    <string name="calculate_bmi_button">Calculate BMI</string>
+    <string name="mess_diet_tab">Mess Diet</string>
+    <string name="nutrition_guide_tab">Nutrition Guide</string>
+    <string name="logout_message">Logged out</string>
+    <string name="role_select_dialog_tag">RoleSelectDialog</string>
+    <string name="profile_login_required">Please log in first</string>
+    <string name="login_dialog_tag">LoginDialog</string>
+    <string name="empty_fields_toast">Fields cannot be empty</string>
+    <string name="login_error_toast">Login Error: %s</string>
+    <string name="hi_user_format">Hi, %s</string>
+    <string name="signup_dialog_tag">SignUpDialog</string>
+    <string name="all_fields_required_toast">All fields are required</string>
+    <string name="signup_error_toast">Signup Error: %s</string>
+    <string name="bmi_empty_fields">Please enter both height and weight.</string>
+    <string name="bmi_positive_values">Values must be positive.</string>
+    <string name="bmi_underweight">Underweight</string>
+    <string name="bmi_normal_weight">Normal weight</string>
+    <string name="bmi_overweight">Overweight</string>
+    <string name="bmi_obesity">Obesity</string>
+    <string name="bmi_result_format">Your BMI: %.2f (%s)</string>
+    <string name="bmi_invalid_input">Invalid input. Please enter numbers only.</string>
+    <string name="food_search_empty_query">Please enter a food to search</string>
+    <string name="food_found_format">Found: %1$s\n\nEnergy: %2$.2f kcal per 100g\nProtein: %3$.2fg\nCarbs: %4$.2fg\nFat: %5$.2fg</string>
+    <string name="food_incomplete_data">Found item with incomplete data.</string>
+    <string name="food_not_found">Food not found.</string>
+    <string name="food_search_failed">Search failed: %s</string>
+    <string name="api_failure_food_search">Food search failed</string>
+    <string name="api_failure_login">Login failed</string>
+    <string name="api_failure_signup">Signup failed</string>
+    <string name="api_failure_menu">Failed to load menu</string>
+    <string name="network_error_menu">Network Error: Could not load menu.</string>
+    <string name="server_error_format">Error from server: %s</string>
+    <string name="loading_menu">Loading menu...</string>
+    <string name="no_items_scheduled">No items scheduled for this meal.</string>
+    <string name="meal_breakfast">Breakfast</string>
+    <string name="meal_lunch">Lunch</string>
+    <string name="meal_dinner">Dinner</string>
+    <string name="weekly_menu_title">Weekly Menu</string>
+    <string name="default_food_item">-</string>
+    <string name="status_success">success</string>
+    <string name="api_failure_tag">API_FAILURE</string>
+    <string name="logout_button">Logout</string>
+    <string name="no_data">N/A</string>
+    <string name="not_provided">Not Provided</string>
+    <string name="dashboard_subtitle">Your personal health dashboard</string>
+    <string name="profile_image_desc">Profile image</string>
+    <string name="edit_profile">Edit Profile</string>
+    <string name="dashboard_cards_title">Health Overview</string>
+    <string name="goal_label">Goal</string>
+    <string name="activity_label">Activity</string>
+    <string name="water_label">Water</string>
+    <string name="sleep_label">Sleep</string>
+    <string name="personal_information">Personal Information</string>
+    <string name="full_name">Full Name</string>
+    <string name="email_label">Email</string>
+    <string name="age_label">Age</string>
+    <string name="weight_label">Weight</string>
+    <string name="height_label">Height</string>
+    <string name="gender_label">Gender</string>
+    <string name="dietary_label">Dietary</string>
+    <string name="allergies_label">Allergies</string>
+    <string name="dislikes_label">Dislikes</string>
+    <string name="medical_conditions_label">Medical Conditions</string>
+    <string name="current_bmi">CURRENT BMI</string>
+
+    <!-- New String Arrays for Spinners -->
+    <string-array name="gender_array">
+        <item>Select Gender</item>
+        <item>Male</item>
+        <item>Female</item>
+        <item>Other</item>
+    </string-array>
+
+    <string-array name="dietary_preference_array">
+        <item>Select Preference</item>
+        <item>Veg</item>
+        <item>Non-Veg</item>
+        <item>Vegan</item>
+    </string-array>
+
+    <string-array name="activity_level_array">
+        <item>Select Level</item>
+        <item>Sedentary</item>
+        <item>Lightly Active</item>
+        <item>Moderately Active</item>
+        <item>Very Active</item>
+    </string-array>
+
+    <string-array name="health_goal_array">
+        <item>Select Goal</item>
+        <item>Weight Loss</item>
+        <item>Weight Gain</item>
+        <item>Muscle Gain</item>
+        <item>Maintenance</item>
+    </string-array>
+
+</resources>
